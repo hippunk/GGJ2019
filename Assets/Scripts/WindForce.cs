@@ -6,4 +6,6 @@ using UnityEngine;
 public class WindForce : ScriptableObject
 {
     public Vector3 force;
+    public Vector3 normalized;
+    public Vector3 MaxClampedTest;
 }

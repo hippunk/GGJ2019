@@ -16,7 +16,7 @@ public class WindInfluence : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        rigidbody.velocity = windForce.force;
+        rigidbody.velocity = new Vector3(windForce.force.x*-1, windForce.force.y, windForce.force.z * -1);
     }
 
     public void OnCollisionEnter(Collision collision)

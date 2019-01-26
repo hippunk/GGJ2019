@@ -29,9 +29,12 @@ public class WindController : MonoBehaviour
         float abssin = Mathf.Abs(Mathf.Sin(angle));
 
         //Clamp speed with circular axis to avoid diagonal movement advantage
-        rigidbody.velocity = new Vector3(Mathf.Max(Mathf.Min(rigidbody.velocity.x, speedThreshold*abscos), -speedThreshold * abscos), rigidbody.velocity.y, Mathf.Max(Mathf.Min(rigidbody.velocity.z, speedThreshold * abssin), -speedThreshold * abssin));
+        //rigidbody.velocity = new Vector3(Mathf.Max(Mathf.Min(rigidbody.velocity.x, speedThreshold*abscos), -speedThreshold * abscos), rigidbody.velocity.y, Mathf.Max(Mathf.Min(rigidbody.velocity.z, speedThreshold * abssin), -speedThreshold * abssin));
 
+        rigidbody.velocity = new Vector3(Mathf.Max(Mathf.Min(rigidbody.velocity.x, speedThreshold), -speedThreshold ), rigidbody.velocity.y, Mathf.Max(Mathf.Min(rigidbody.velocity.z, speedThreshold), -speedThreshold ));
+        
         windForce.force = rigidbody.velocity;
+        windForce.normalized = new Vector3(windForce.force.x,0,windForce.force.z).normalized;
         transform.position = new Vector3(0,0,0); //dirty hack to keep position (will avoid world limit computation issues)
     }
 }

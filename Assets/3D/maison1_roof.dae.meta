@@ -5,13 +5,20 @@ ModelImporter:
   fileIDToRecycleName:
     100000: //RootNode
     100002: skp_camera_Last_Saved_SketchUp_View
+    100004: ID11
+    100006: group_0
     400000: //RootNode
     400002: skp_camera_Last_Saved_SketchUp_View
+    400004: ID11
+    400006: group_0
     2000000: skp_camera_Last_Saved_SketchUp_View
     2100000: material
     2300000: //RootNode
+    2300002: group_0
     3300000: //RootNode
+    3300002: group_0
     4300000: SketchUp
+    4300002: group_0
   externalObjects: {}
   materials:
     importMaterials: 1
