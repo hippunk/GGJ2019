@@ -6,6 +6,4 @@ using UnityEngine;
 public class WindForce : ScriptableObject
 {
     public Vector3 force;
-
-    
 }
