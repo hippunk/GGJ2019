@@ -22,5 +22,6 @@ public class WindInfluence : MonoBehaviour
     public void OnCollisionEnter(Collision collision)
     {
         this.enabled = false;
+        rigidbody.velocity = Vector3.zero;
     }
 }
