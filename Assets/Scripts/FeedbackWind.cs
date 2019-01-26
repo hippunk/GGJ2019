@@ -13,6 +13,7 @@ public class FeedbackWind : MonoBehaviour
     public float circleLenght;
     public float squareLenght;
     public float tana;
+
     private void Start()
     {
         rectTransform = GetComponent<RectTransform>();
@@ -24,7 +25,7 @@ public class FeedbackWind : MonoBehaviour
         Vector3 force = new Vector3(windForce.force.x,0, windForce.force.z);
         angle = Mathf.Atan2(force.z, force.x);
 
-        squareLenght = (force / 10).magnitude;
+        squareLenght = (force / GameObject.Find("WindManager").GetComponent<WindController>().speedThreshold).magnitude;
 
         
         lenght = squareLenght * 80;
