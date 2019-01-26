@@ -30,7 +30,7 @@ public class FeedbackWind : MonoBehaviour
         
         lenght = squareLenght * 80;
 
-        rectTransform.sizeDelta = new Vector2(5, lenght);
+        rectTransform.sizeDelta = new Vector2(8, lenght);
         rectTransform.rotation = Quaternion.Euler(0,0,(angle * 180 / Mathf.PI )- 90);
     }
 }
