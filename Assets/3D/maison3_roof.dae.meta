@@ -1,54 +1,91 @@
 fileFormatVersion: 2
-guid: 9b154ecb9411cda4e99d9eef57eac32a
-SketchUpImporter:
-  generateBackFace: 0
-  mergeCoplanarFaces: 0
-  selectedNodes: 0000000001000000020000000300000004000000
-  assetHash:
-    serializedVersion: 2
-    Hash: 334fe98aa79e7e9022f866319ed4dcfa
-  longitude: 2.333
-  latitude: 48.867
-  northCorrection: -0
-  fileUnit: 0
-  sketchUpImportData:
-    defaultCamera:
-      position: {x: -22.80393, y: 25.131327, z: -21.823656}
-      lookAt: {x: -7.149429, y: 13.350946, z: -7.047322}
-      up: {x: 0.3491045, y: 0.8772355, z: 0.32952082}
-      fov: 35
-      aspectRatio: 0
-      orthoSize: 1
-      isPerspective: 1
-    scenes: []
+guid: 238df713cfa87774b96623cfd559e4de
+ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: Group 1
-    100004: Group 3
-    400000: //RootNode
-    400002: Group 1
-    400004: Group 3
-    2100000: _defaultMat
-    2100002: '[Brick Antique 01]'
-    2100004: '[Blinds Roman Hobbled Blue]'
-    2100006: '[Blinds Vertical Stripe Gray]'
-    2100008: '[Translucent Glass Blue]'
-    2100010: '[Roofing Tile Spanish]'
-    2300000: //RootNode
-    2300002: Group 1
-    2300004: Group 3
-    3300000: //RootNode
-    3300002: Group 1
-    3300004: Group 3
-    4300000: Mesh maison2
-    4300002: Mesh Group 1
-    4300004: Mesh Group 3
+    100000: group_0
+    100002: ID103
+    100004: ID12
+    100006: ID25
+    100008: ID33
+    100010: ID41
+    100012: ID49
+    100014: ID57
+    100016: ID65
+    100018: ID71
+    100020: ID77
+    100022: ID83
+    100024: ID89
+    100026: ID97
+    100028: //RootNode
+    100030: skp_camera_Last_Saved_SketchUp_View
+    400000: group_0
+    400002: ID103
+    400004: ID12
+    400006: ID25
+    400008: ID33
+    400010: ID41
+    400012: ID49
+    400014: ID57
+    400016: ID65
+    400018: ID71
+    400020: ID77
+    400022: ID83
+    400024: ID89
+    400026: ID97
+    400028: //RootNode
+    400030: skp_camera_Last_Saved_SketchUp_View
+    2000000: skp_camera_Last_Saved_SketchUp_View
+    2100000: material
+    2100002: Roofing_Scalloped
+    2100004: Translucent_Glass_Blue
+    2300000: group_0
+    2300002: ID103
+    2300004: ID12
+    2300006: ID25
+    2300008: ID33
+    2300010: ID41
+    2300012: ID49
+    2300014: ID57
+    2300016: ID65
+    2300018: ID71
+    2300020: ID77
+    2300022: ID83
+    2300024: ID89
+    2300026: ID97
+    3300000: group_0
+    3300002: ID103
+    3300004: ID12
+    3300006: ID25
+    3300008: ID33
+    3300010: ID41
+    3300012: ID49
+    3300014: ID57
+    3300016: ID65
+    3300018: ID71
+    3300020: ID77
+    3300022: ID83
+    3300024: ID89
+    3300026: ID97
+    4300000: group_0
+    4300002: ID12
+    4300004: ID25
+    4300006: ID33
+    4300008: ID41
+    4300010: ID49
+    4300012: ID57
+    4300014: ID65
+    4300016: ID71
+    4300018: ID77
+    4300020: ID83
+    4300022: ID89
+    4300024: ID97
+    4300026: ID103
   externalObjects: {}
   materials:
     importMaterials: 1
-    materialName: 2
-    materialSearch: 0
+    materialName: 0
+    materialSearch: 1
     materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
@@ -75,7 +112,7 @@ SketchUpImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 0.0254
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -106,7 +143,7 @@ SketchUpImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
-  importAnimation: 0
+  importAnimation: 1
   copyAvatar: 0
   humanDescription:
     serializedVersion: 2

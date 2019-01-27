@@ -1,21 +1,21 @@
 fileFormatVersion: 2
-guid: 9b154ecb9411cda4e99d9eef57eac32a
+guid: 1a1a720e3a4a8f74c9e6420ad643de86
 SketchUpImporter:
   generateBackFace: 0
   mergeCoplanarFaces: 0
-  selectedNodes: 0000000001000000020000000300000004000000
+  selectedNodes: 000000000100000002000000
   assetHash:
     serializedVersion: 2
-    Hash: 334fe98aa79e7e9022f866319ed4dcfa
+    Hash: 299e1edd7df3f21d10ae024f1ff1d3a6
   longitude: 2.333
   latitude: 48.867
   northCorrection: -0
   fileUnit: 0
   sketchUpImportData:
     defaultCamera:
-      position: {x: -22.80393, y: 25.131327, z: -21.823656}
-      lookAt: {x: -7.149429, y: 13.350946, z: -7.047322}
-      up: {x: 0.3491045, y: 0.8772355, z: 0.32952082}
+      position: {x: -18.354822, y: 16.366833, z: -19.460512}
+      lookAt: {x: -5.80438, y: 9.914092, z: -7.408432}
+      up: {x: 0.25079295, y: 0.93760425, z: 0.24083431}
       fov: 35
       aspectRatio: 0
       orthoSize: 1
@@ -23,27 +23,14 @@ SketchUpImporter:
     scenes: []
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: Group 1
-    100004: Group 3
-    400000: //RootNode
-    400002: Group 1
-    400004: Group 3
-    2100000: _defaultMat
-    2100002: '[Brick Antique 01]'
-    2100004: '[Blinds Roman Hobbled Blue]'
-    2100006: '[Blinds Vertical Stripe Gray]'
-    2100008: '[Translucent Glass Blue]'
-    2100010: '[Roofing Tile Spanish]'
-    2300000: //RootNode
-    2300002: Group 1
-    2300004: Group 3
-    3300000: //RootNode
-    3300002: Group 1
-    3300004: Group 3
-    4300000: Mesh maison2
-    4300002: Mesh Group 1
-    4300004: Mesh Group 3
+    100000: Group 1
+    100002: //RootNode
+    400000: Group 1
+    400002: //RootNode
+    2100000: '[Roofing Tile Spanish]'
+    2300000: Group 1
+    3300000: Group 1
+    4300000: Mesh Group 1
   externalObjects: {}
   materials:
     importMaterials: 1

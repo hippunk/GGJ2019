@@ -213,7 +213,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f35866607a9d7b4bac1355e22be0816, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraOffset: {x: -1, y: 7, z: 3.11}
+  cameraOffset: {x: 0, y: 7, z: 3.11}
   trackedObject: {fileID: 0}
   debugCalc: {x: 0, y: 0, z: 0}
 --- !u!1001 &95713427
