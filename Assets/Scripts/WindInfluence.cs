@@ -21,7 +21,11 @@ public class WindInfluence : MonoBehaviour
 
     public void OnCollisionEnter(Collision collision)
     {
-        this.enabled = false;
-        rigidbody.velocity = Vector3.zero;
+        if (this.enabled == true)
+        {
+            this.enabled = false;
+            rigidbody.velocity = Vector3.zero;
+            HouseFactory.GetInstance().InitGenerateWithDelay(2f);
+        }
     }
 }

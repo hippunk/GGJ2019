@@ -4,15 +4,43 @@ using UnityEngine;
 
 public class HouseFactory : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public GameObject camera;
+    public List<GameObject> pool;
+    public GameObject currentObject;
+    public Vector3 genPos = new Vector3(0, 20, 0);
+
+
+    private static HouseFactory instance = null;
+
+    public void Start()
     {
-        
+        instance = this;
+        Generate();
     }
 
-    // Update is called once per frame
-    void Update()
+    public static HouseFactory GetInstance()
     {
-        
+        return instance;
+    }
+
+    public void InitGenerateWithDelay(float delay)
+    {
+        StartCoroutine(instance.GenerateWithDelay(delay));
+    }
+
+    public IEnumerator GenerateWithDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        Generate();
+    }
+
+    public static void Generate()
+    {
+        GameObject gen = instance.pool[Random.Range(0, instance.pool.Count)];
+
+        instance.currentObject = Instantiate(gen);
+        instance.currentObject.transform.position = instance.genPos;
+        GameObject group = instance.currentObject.GetComponent<GroupAccess>().group;
+        instance.camera.GetComponent<CameraTracker>().trackedObject = group;
     }
 }
