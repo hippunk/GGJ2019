@@ -25,7 +25,10 @@ public class HouseFactory : MonoBehaviour
 
     public void InitGenerateWithDelay(float delay)
     {
-        StartCoroutine(instance.GenerateWithDelay(delay));
+        if (enabled == true)
+        {
+            StartCoroutine(instance.GenerateWithDelay(delay));
+        }
     }
 
     public IEnumerator GenerateWithDelay(float delay)

@@ -6,6 +6,7 @@ public class WindInfluence : MonoBehaviour
 {
     public WindForce windForce;
     Rigidbody rigidbody;
+    public bool fastDrop = false;
 
     // Start is called before the first frame update
     void Start()
@@ -16,7 +17,14 @@ public class WindInfluence : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        rigidbody.velocity = new Vector3(windForce.force.x*-1, windForce.force.y, windForce.force.z * -1);
+        if (Input.GetKey(KeyCode.Space))
+        {
+            fastDrop = true;
+            rigidbody.AddForce(1f*Vector3.down, ForceMode.Impulse);
+        }
+
+        if(fastDrop == false)
+            rigidbody.velocity = new Vector3(windForce.force.x*-1, windForce.force.y, windForce.force.z * -1);
     }
 
     public void OnCollisionEnter(Collision collision)
