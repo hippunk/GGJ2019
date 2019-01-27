@@ -30,6 +30,13 @@ public class TimeManager : MonoBehaviour
             yield return new WaitForSeconds(1);
             temps--;
             tempsText.text = temps.ToString();
+            if(temps%30 == 0)
+            {
+                WindController.instance.maxDownSpeed+=0.5f;
+                WindController.instance.speedThreshold+=0.5f;
+                Physics.gravity = Physics.gravity+Vector3.down*0.5f;
+
+            }
         }
 
         //Comportement de fin de partie

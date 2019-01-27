@@ -17,10 +17,11 @@ public class WindInfluence : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKey(KeyCode.Space) && fastDrop == false)
         {
             fastDrop = true;
             rigidbody.AddForce(1f*Vector3.down, ForceMode.Impulse);
+            HouseFactory.GetInstance().InitGenerateWithDelay(0.5f);
         }
 
         if(fastDrop == false)
@@ -29,7 +30,7 @@ public class WindInfluence : MonoBehaviour
 
     public void OnCollisionEnter(Collision collision)
     {
-        if (this.enabled == true)
+        if (this.enabled == true && fastDrop == false)
         {
             this.enabled = false;
             rigidbody.velocity = Vector3.zero;

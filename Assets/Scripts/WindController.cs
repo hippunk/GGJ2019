@@ -11,9 +11,12 @@ public class WindController : MonoBehaviour
     public WindForce windForce;
     Rigidbody rigidbody;
     public float angle;
+    public static WindController instance;
+
     void Start()
     {
         rigidbody = GetComponent<Rigidbody>();
+        instance = this;
     }
 
     // Update is called once per frame
